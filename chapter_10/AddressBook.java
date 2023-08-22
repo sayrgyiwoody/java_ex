@@ -11,6 +11,16 @@ public class AddressBook {
         this(DEFAULT_SIZE);
     }
 
+    public AddressBook(int size){
+        count = 0;
+        if(size <= 0) {
+            throw new IllegalArgumentException("Size must be positive.");
+        }
+        entry = new Person[size];
+
+        System.out.println("Array of " + size + " is created.");
+
+    }
 
     public void expand(){
         //create a new array whose size is 150% of the current array
@@ -44,16 +54,31 @@ public class AddressBook {
         count++;
     }
 
-    public AddressBook(int size){
-        count = 0;
-        if(size <= 0) {
-            throw new IllegalArgumentException("Size must be positive.");
-        }
-        entry = new Person[size];
+    // for exercise 16
+    public void addDuplicate(Person newPerson){
+        assert count >= 0 && 
+        count <= entry.length;
 
-        System.out.println("Array of " + size + " is created.");
+        // check duplicate before adding 
+        for(int i = 0; i< count ; i++) {
+            if(newPerson.getName().equals(entry[i].getName())){
+                System.out.println("Person with name : " + newPerson.getName() + " already exists. Not added.");
+                return;
+            }
+            System.out.println("message after return");
+            
+            
+        }
+        if(count == entry.length) {
+            expand();
+        }
+
+        entry[count] = newPerson;
+        count++;
 
     }
+
+    
 
     public Person searchName (String searchName) {
         Person foundPerson;
@@ -118,7 +143,7 @@ public class AddressBook {
 
         assert count >= 0 && count < entry.length;
 
-        for (int i = 0 ; i< entry.length ; i++) {
+        for (int i = 0 ; i< count ; i++) {
             if(searchName.equals(entry[i].getName())) {
                  foundPerson.add(entry[i]);
             }

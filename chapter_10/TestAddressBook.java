@@ -11,7 +11,10 @@ public class TestAddressBook {
         //add N Person objects
         for(int i = 0 ;i < N ; i++) {
             person = new Person("Ms. X" + i , 10 , 'F');
-            myBook.add(person);
+            // myBook.add(person);
+
+            // testing ex_15 
+            myBook.addDuplicate(person);
         }
 
     }
@@ -36,11 +39,20 @@ public class TestAddressBook {
         AddressBook addressBook = new AddressBook(5);
 
         // Add some persons to the address book
-        addressBook.add(new Person("Alice"));
-        addressBook.add(new Person("Bob"));
-        addressBook.add(new Person("Alice"));
-        addressBook.add(new Person("Charlie"));
-        addressBook.add(new Person("Alice"));
+        // addressBook.add(new Person("Alice"));
+        // addressBook.add(new Person("Bob"));
+        // addressBook.add(new Person("Alice"));
+        // addressBook.add(new Person("Charlie"));
+        // addressBook.add(new Person("Alice"));
+
+        //exercise 16 test 
+        addressBook.addDuplicate(new Person("Alice"));
+        addressBook.addDuplicate(new Person("Bob"));
+        addressBook.addDuplicate(new Person("Alice"));
+        addressBook.addDuplicate(new Person("Charlie"));
+        addressBook.addDuplicate(new Person("Alice"));
+
+       
 
         ArrayList<Person> personList = addressBook.searchMultiple("Alice");
 
@@ -55,8 +67,8 @@ public class TestAddressBook {
 
     public static void main(String[] args) {
         TestAddressBook tester = new TestAddressBook();
-        tester.setupArray(5);
-        tester.testSearch();
+        // tester.setupArray(5);
+        // tester.testSearch();
         tester.testMultipleSearch();
     }
 

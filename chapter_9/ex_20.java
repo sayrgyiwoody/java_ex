@@ -1,5 +1,6 @@
 package chapter_9;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -12,15 +13,19 @@ public class ex_20 {
         while(str.length() != 0) {
             StringTokenizer st = new StringTokenizer(str," ");
 
-            String finalRev = "";
+            ArrayList<StringBuffer> finalRev = new ArrayList<StringBuffer>();
             while(st.hasMoreTokens()){
                 StringBuffer bf = new StringBuffer(st.nextToken());
                 StringBuffer revBf = bf.reverse();
-                finalRev += revBf + " ";
+                finalRev.add(revBf);
             }
-            System.out.println("Reverse string with StringTokenizer : " + finalRev);
+            System.out.println("Reverse string with StringTokenizer : ");
 
-        System.out.println("Enter a string or blank to exit: ");
+            for(StringBuffer s : finalRev){
+                System.out.print(s + " ");
+            }
+
+        System.out.println("\nEnter a string or blank to exit: ");
         str = scn.nextLine();
         }
 

@@ -1,4 +1,4 @@
-package chapter_11;
+package chapter_12;
 import java.io.*;
 
 public class CharStreamWrite {

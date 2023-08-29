@@ -21,10 +21,13 @@ public class ex_4 {
             System.out.print("Enter the type of the pet ('c' for cat, 'd' for dog): ");
             char type = scanner.nextLine().charAt(0);
 
-            if (type == 'c' || type == 'd') {
-                Pet pet = new Pet(name, type);
-                petList.add(pet);
-            } else {
+            if (type == 'c') {
+                Cat cat = new Cat(name);
+                petList.add(cat);
+            } else if(type == 'd'){
+                Dog dog = new Dog(name);
+                petList.add(dog);
+            } else{
                 System.out.println("Invalid type. Please enter 'c' for cat or 'd' for dog.");
             }
         }
@@ -35,5 +38,7 @@ public class ex_4 {
             String petType = (p.getType() == 'c') ? "Cat" : "Dog";
             System.out.println("Name: " + p.getName() + ", Type: " + petType);
         }
+
+        
     }
 }

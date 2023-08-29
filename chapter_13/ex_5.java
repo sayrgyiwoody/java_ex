@@ -1,14 +1,14 @@
 package chapter_13;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 //pet class
 
 public class ex_5 {
     public static void main(String[] args) {
-        ArrayList<Pet> cat = new ArrayList<>();
-        ArrayList<Pet> dog = new ArrayList<>();
+        ArrayList<Pet> petList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         
         while (true) {
@@ -22,25 +22,25 @@ public class ex_5 {
             System.out.print("Enter the type of the pet ('c' for cat, 'd' for dog): ");
             char type = scanner.nextLine().charAt(0);
 
+
             if (type == 'c') {
-                Pet pet = new Pet(name, type);
-                cat.add(pet);
+                Pet pet = new Pet(name,'c');
+                petList.add(pet);
             } else if(type == 'd'){
-                Pet pet = new Pet(name,type);
-                dog.add(pet);
+                Pet pet = new Pet(name,'d');
+                petList.add(pet);
             } else{
                 System.out.println("Invalid type. Please enter 'c' for cat or 'd' for dog.");
             }
         }
 
-        System.out.println("\nList of Cats:");
-        for (Pet p : cat) {
-            System.out.println( "Name: " + p.getName() );
+        Collections.sort(petList,(o1,o2) -> o1.getType() - o2.getType());
+        System.out.println("\nList of Pets:");
+
+        for (Pet p : petList) {
+            System.out.println( "Name: " + p.getName() + " Type : " + p.getType() );
         }
 
-        System.out.println("\nList of Dogs:");
-        for (Pet p : dog) {
-            System.out.println( "Name: " + p.getName() );
-        }
+        
     }
 }

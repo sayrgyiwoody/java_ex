@@ -5,36 +5,7 @@ import java.util.Scanner;
 
 //pet class
 
-class Dog extends Pet {
-    private double weight;
 
-    public Dog(String name){
-        super(name,'d');
-    }
-
-    public double getWeight(){
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-}
-
-class Cat extends Pet {
-    private String coatColor;
-
-    public Cat(String name) {
-        super(name,'c');
-    }
-    public String getCoatColor() {
-        return coatColor;
-    }
-
-    public void setCoatColor(String coatColor) {
-        this.coatColor = coatColor;
-    }
-}
 
 public class ex_6 {
     public static void main(String[] args) {
@@ -86,7 +57,7 @@ public class ex_6 {
         }
 
         //print out the arrayList
-        System.out.println("\nPet List :");
+        System.out.println("\nPet List :"); 
         for(Pet p : petList){
             // display pet name 
             System.out.println("Pet name : " + p.getName());

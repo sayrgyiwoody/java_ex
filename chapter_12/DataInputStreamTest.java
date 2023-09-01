@@ -2,7 +2,7 @@ package chapter_12;
 
 import java.io.*;
 
-public class DataInputStream {
+public class DataInputStreamTest {
     public static void main(String[] args) throws IOException {
         File file = new File("sample.txt");
         FileInputStream inFileStream = new FileInputStream(file);

@@ -1,6 +1,6 @@
 package chapter_13;
 
-class Circle {
+class Circle extends Shape {
     private double radius;
 
     public double calculateArea(){

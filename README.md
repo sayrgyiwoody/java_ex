@@ -15,7 +15,8 @@
 
 1. Clone the whole repo or a single file as you wish.
 2. Open the exercise files directly with its chapter and check for answers.
-3. Star this repo to view later. 
+3. Star this repo to view later.
+4. In the Exam folder , you can see all tutorial and lab test answers 
 
 # <h3>Contribution</h3>
 

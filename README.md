@@ -2,14 +2,13 @@
   <img width="144" height="144" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
 </div>
 
-<h2 align="center">
+<h1 align="center">
    All Java Exercises answers , semester 3 , CS 202 , UCSY
-</h2>
+</h1>
 
 <div align="center">
-   <p>I tried to answer the Exercises and Here are the solutions to the Java Exercises for semester 3.</p>
+   <p>I tried to answer the Exercises and Here are the solutions to the Java Exercises , Tutorials and Lab Tests for semester 3.</p>
 </div>
-
 
 # <h3>Usage</h3>
 

@@ -19,6 +19,4 @@
 
 # <h3>Contribution</h3>
 
-If you find any mistakes, please create an issue to tell me.
-
-Pull requests are also appreciated. 
+If you find any mistakes, please create an issue to tell me or contact me via [telegram](https://t.me/waiyanwoody)

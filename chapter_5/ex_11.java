@@ -1,5 +1,5 @@
-package chaper_5;
-import java.util.*;
+package chapter_5;
+import java.util.*; 
 
 public class ex_11 {
 

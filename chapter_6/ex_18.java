@@ -18,7 +18,5 @@ public class ex_18 {
         }
         
 
-
-
     }
 }

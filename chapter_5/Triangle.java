@@ -1,4 +1,4 @@
-package chaper_5;
+package chapter_5;
 
 public class Triangle {
     public static final double INVALID_DIMENSION = -1;

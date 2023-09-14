@@ -11,11 +11,9 @@ public class ex_17 {
         for(int i = low+1 ; i<high ; i++){
             int sum = 0;
             int temp = i;
-            while(temp>0) {
-                int digit = temp % 10;
-                sum += Math.pow(digit, 3);
-                temp /= 10;
-            }
+            int digit = temp % 10;
+            sum += Math.pow(digit, 3);
+            temp /= 10;
             if(sum == i) {
                 System.out.print(i + " ");
             }

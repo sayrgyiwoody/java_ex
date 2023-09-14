@@ -1,4 +1,4 @@
-package chaper_5;
+package chapter_5;
 
 public class ex_15 {
     public static void main(String[] args) {

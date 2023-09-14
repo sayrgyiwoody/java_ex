@@ -1,10 +1,10 @@
-package chaper_5;
+package chapter_5;
 
 import java.util.Scanner;
 
 public class ex_10 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		int height, recommendWeight;
 		Scanner scn = new Scanner(System.in);
 		System.out.println("Enter your height in cm : ");

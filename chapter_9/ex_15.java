@@ -10,16 +10,16 @@ public class ex_15 {
         String str = scn.nextLine();
 
         // using for loop
-        // String reverseStr = "";
-        // for (int i = str.length()-1;i>=0;i--){
-        // reverseStr += str.charAt(i);
-        // }
+        String reverseStr = "";
+        for (int i = str.length()-1;i>=0;i--){
+        reverseStr += str.charAt(i);
+        }
 
         // using StringBuffer
-        StringBuffer bf = new StringBuffer(str);
-        StringBuffer revBf = bf.reverse();
+        // StringBuffer bf = new StringBuffer(str);
+        // StringBuffer revBf = bf.reverse();
 
-        System.out.println("Reverse String : " + revBf);
+        System.out.println("Reverse String : " + reverseStr);
     }
 
 }

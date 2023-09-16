@@ -12,7 +12,7 @@ public class ex_18 {
             int i = 0;
             while(i+2 < str.length()) {
                 String codon = str.substring(i,i+3);
-                System.out.println(codon);\
+                System.out.println(codon);
                 i+=3;
             }
 

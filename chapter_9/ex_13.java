@@ -14,6 +14,7 @@ public class ex_13 {
                 count ++;
             }
         }
+        
         System.out.println("Number of Upper Case Letter in String : " + count);
     }
 }

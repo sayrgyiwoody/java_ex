@@ -16,7 +16,7 @@ public class ex_9 {
                 System.out.println(word);
             }
             
-
+            inObjectStream.close();
         }catch (IOException | ClassNotFoundException e) {
             System.out.println("Error : " + e.getMessage());
         }

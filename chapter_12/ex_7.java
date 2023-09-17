@@ -4,9 +4,10 @@ public class ex_7 {
     public static void main(String[] args) {
         try {
             String str = "";
-            File readFile = new File("ex_6.txt");
-            FileReader freader = new FileReader(readFile);
-            BufferedReader br = new BufferedReader(freader);
+            // File readFile = new File("ex_6.txt");
+            // FileReader freader = new FileReader(readFile);
+            // BufferedReader br = new BufferedReader(freader);
+            BufferedReader br = new BufferedReader(new FileReader("ex_6.txt"));
             String shortestWord = null;
             String longestWord = null;
             int wordCount = 0;

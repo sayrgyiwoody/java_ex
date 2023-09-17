@@ -44,8 +44,8 @@ public class PersonArray {
 
         //showing youngest and oldest object's datas
 
-        System.out.println("Youngest Person Name = " + youngest.getName() + " Age : " + youngest.getAge() );
-        System.out.println("Oldest Person Name = " + oldest.getName() + " Age : " + oldest.getAge() );
+        System.out.println("Youngest Person Name = " + youngest.getName() + "\nAge : " + youngest.getAge() );
+        System.out.println("Oldest Person Name = " + oldest.getName() + "\nAge : " + oldest.getAge() );
 
     }
 }

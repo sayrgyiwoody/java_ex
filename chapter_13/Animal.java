@@ -10,4 +10,8 @@ class Cows extends Animal {
     public void eat() {
         System.out.println("Cows eat plants");
     }
+    public static void main(String[] args) {
+        Cows cow = new Cows();
+        cow.eat();
+    }
 }

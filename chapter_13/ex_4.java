@@ -25,7 +25,7 @@ public class ex_4 {
                 Cat cat = new Cat(name);
                 petList.add(cat);
             } else if(type == 'd'){
-                Dog dog = new Dog(name);
+                Dog dog = new Dog(name); 
                 petList.add(dog);
             } else{
                 System.out.println("Invalid type. Please enter 'c' for cat or 'd' for dog.");

@@ -24,17 +24,17 @@ public class ex_5 {
 
 
             if (type == 'c') {
-                Pet pet = new Pet(name,'c');
-                petList.add(pet);
+                Cat cat = new Cat(name);
+                petList.add(cat);
             } else if(type == 'd'){
-                Pet pet = new Pet(name,'d');
-                petList.add(pet);
+                Dog dog = new Dog(name);
+                petList.add(dog);
             } else{
                 System.out.println("Invalid type. Please enter 'c' for cat or 'd' for dog.");
             }
         }
 
-        Collections.sort(petList,(o1,o2) -> o1.getType() - o2.getType());
+        Collections.sort(petList,(o1,o2) -> o1.getType() - o2.getType()); //sorting ascending
         System.out.println("\nList of Pets:");
 
         for (Pet p : petList) {

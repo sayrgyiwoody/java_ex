@@ -15,7 +15,7 @@ public class test {
         String str;
 
         while((str = br.readLine()) != null) {
-            System.out.println(str);
+            System.out.println(st\);
         }
         
 

@@ -38,7 +38,6 @@ class Ch14JCheckBoxSample1 extends JFrame implements ActionListener {
 
         for(int i = 0 ; i < checkBox.length ; i++) {
             checkBox[i] = new JCheckBox(btnText[i]);
-
             checkPanel.add(checkBox[i]);
             
         }

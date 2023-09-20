@@ -34,7 +34,6 @@ public class MindReader extends JFrame implements ActionListener {
 
     public MindReader() {
         contentPane = getContentPane();
-        contentPane = getContentPane();
         contentPane.setLayout(new FlowLayout());
 
         //img

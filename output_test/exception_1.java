@@ -1,8 +1,8 @@
-package chapter_8;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+package output_test;
 
-public class ex_1 {
+import java.util.*;
+
+public class exception_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
@@ -12,7 +12,7 @@ public class ex_1 {
         }
         System.out.println("I'm happy with the input.");
         } catch (InputMismatchException e) {
-        aSystem.out.println("Invalid Entry");
+        System.out.println("Invalid Entry");
         } catch (ArithmeticException e) {
         System.out.println("Error: "+ e.getMessage());
         }

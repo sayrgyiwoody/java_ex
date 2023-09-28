@@ -1,4 +1,5 @@
-package java_1;
+package chapter_4;
+
 import java.util.Random;
 public class LotteryCard {
 	private static final int MAX_NUMBER = 15;

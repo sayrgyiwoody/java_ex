@@ -1,4 +1,5 @@
-package java_1;
+package chapter_4;
+
 import javax.swing.*;
 import java.awt.*;
 public class Rectangle {

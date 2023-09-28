@@ -1,4 +1,5 @@
-package java_1;
+package chapter_4;
+
 
 public class Circle {
 	private double r;

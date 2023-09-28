@@ -1,4 +1,5 @@
-package java_1;
+package chapter_4;
+
 
 class RollDice {
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
-package java_1;
+package chapter_4;
+
 import java.util.Scanner;
 public class Ex7 {
 
